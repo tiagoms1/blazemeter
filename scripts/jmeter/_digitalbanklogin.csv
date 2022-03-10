@@ -1,0 +1,4 @@
+username,password,type
+nsmith@demo.io,Demo123!,docker ok
+nsmith@demo.io,Dem3!abc,docker wrong pass
+nsmithwrong@demo.io,Demo123!,docker wrong user
