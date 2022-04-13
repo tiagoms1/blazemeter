@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # script to trigger a test and send a file when needed to be executed.
-# to execute the script you can call it as:
+# to execute the script you can call it as: #20200413
 # help:
 # python blazemeter-test-trigger.py -h
 #  --testid TESTID, -t TESTID
