@@ -28,6 +28,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Download Test Script Dependencies
+      run: |
+        pip install requests
+        pip install argparse
+    - name: Download Test Script
+      run: |
         wget https://raw.githubusercontent.com/tiagoms1/blazemeter/main/scripts/python-trigger-test/blazemeter-test-trigger.py
     #- name: Lint with flake8
     #  run: |
@@ -38,7 +44,7 @@ jobs:
     #- name: Test with pytest
     #  run: |
     #    pytest
-    - name: Performance Test
+    - name: Execute Performance Test
       run: |
-        python blazemeter-test-trigger.py --testId 3234 --keysecret askldhfa8s7dfhas87dfha
+        python blazemeter-test-trigger.py --keysecret MzQ2MDk0MTQ2ZWY2OGU1OGZhMzMzYTg0OmU1NzFlMjdjYjUxMTAxYmQzYWM0NzVkMmRkYmVmZmMzOWRkMDQ3MmYxNzNlNWJhMTJhY2JjNzhlNzgxNzA5YjBlMWRiNDI2Yw==
 
