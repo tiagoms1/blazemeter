@@ -11,4 +11,4 @@ Script to be executed as docker compose
 jmeter
 gatling
 github-actions
-and more to come... :)
+and more to come... 
