@@ -63,7 +63,9 @@ def main():
     else:
         print ("Triggering the start of the test...")
         #start the test
-        response = requests.post(f"https://a.blazemeter.com/api/v4/tests/"+str(testId)+"/start?delayedStart=false",
+        blzurl="https://a.blazemeter.com/api/v4/tests/"+str(testId)+"/start?delayedStart=false"
+        print(blzurl)
+        response = requests.post(blzurl,
         headers={
             "Authorization": "Basic " + keySecret
         })
@@ -80,9 +82,11 @@ def main():
             #check the status for the execution
             tries = 1000 #loops this amount of time or finishes when the execution reaches the ENDED status
             i = 0
+            blzurl="https://a.blazemeter.com/api/v4/masters/"+str(masterId)+"/status?level=NOTICE"
+            print(blzurl)
             while i < tries:
                 i += 1
-                response = requests.get(f"https://a.blazemeter.com/api/v4/masters/"+str(masterId)+"/status?level=NOTICE",
+                response = requests.get(blzurl,
                 headers={
                 "Authorization": "Basic " + keySecret
                 })
