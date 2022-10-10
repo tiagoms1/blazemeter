@@ -70,7 +70,7 @@ def main():
             "Authorization": "Basic " + keySecret
         })
         data = response.json()
-        print(data)
+        #print(data)
         try:
             masterId = data['result']['id']
             print("Take a look online at: https://a.blazemeter.com/app/#/masters/"+str(masterId))
@@ -83,7 +83,7 @@ def main():
             tries = 1000 #loops this amount of time or finishes when the execution reaches the ENDED status
             i = 0
             blzurl="https://a.blazemeter.com/api/v4/masters/"+str(masterId)+"/status?level=NOTICE"
-            print(blzurl)
+            #print(blzurl)
             while i < tries:
                 i += 1
                 response = requests.get(blzurl,
@@ -106,6 +106,7 @@ def main():
                 #get containerName from the execution info
                 sessionId = data['result']['sessions'][0]['id']
                 containerName = sessionId+"-0-0-c"
+                print(containerName)
 
     print ("Script finished")
     return(0)
