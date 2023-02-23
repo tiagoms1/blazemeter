@@ -1,0 +1,28 @@
+provisioning: cloud
+
+modules:
+  cloud:
+    test: BlazeDemoCSVTaurus
+    #test: https://a.blazemeter.com/app/#/accounts/291446/workspaces/435725/projects/530057/tests/12224028
+    timeout: 7s # BlazeMeter API client timeout
+    browser-open: start # auto-open browser on test start/end/both/none
+
+scenarios:
+  sample:
+    script: 'blazedemo_csv.jmx'
+    data-sources:
+      - 'flightoptions.csv'
+
+#reporting:
+#- module: final-stats
+#- module: console
+
+execution:
+- scenario: sample
+  executor: jmeter
+  concurrency: 15
+  hold-for: 1m
+  ramp-up: 30s
+  #locations:
+  #    us-west-1: 1
+  
