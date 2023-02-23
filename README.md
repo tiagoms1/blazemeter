@@ -11,4 +11,5 @@ Script to be executed as docker compose
 jmeter
 gatling
 github-actions
+gitlab cicd pipeline
 and more to come... 
