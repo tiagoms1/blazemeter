@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Prepare Taurus Test
-      uses: actions/taurus-action@v1
+      uses: tiagoms1/taurus-action@v1
       with:
         taurus_project_folder_name: 'taurus'
         taurus_command_line: blazedemo-csv-taurus.yml -report
