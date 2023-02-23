@@ -1,0 +1,23 @@
+name: Taurus Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  perf-test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Prepare Taurus Test
+      uses: actions/taurus-action@v1
+      with:
+        taurus_project_folder_name: 'taurus'
+        taurus_command_line: blazedemo-csv-taurus.yml -report
