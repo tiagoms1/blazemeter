@@ -3,9 +3,11 @@ provisioning: cloud
 modules:
   cloud:
     test: BlazeDemoCSVTaurus
-    #test: https://a.blazemeter.com/app/#/accounts/291446/workspaces/435725/projects/530057/tests/12224028
     timeout: 7s # BlazeMeter API client timeout
     browser-open: start # auto-open browser on test start/end/both/none
+    account: 1348473
+    workspace: 1390065
+    project: 1785440
 
 scenarios:
   sample:
