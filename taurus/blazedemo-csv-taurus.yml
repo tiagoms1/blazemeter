@@ -13,14 +13,12 @@ scenarios:
     data-sources:
       - 'flightoptions.csv'
 
-#reporting:
+reporting:
+- module: passfail
+  criteria:
+  - failures>2%, stop as failed
 #- module: final-stats
 #- module: console
-reporting:
-  - module: passfail
-    criteria:
-      - critical:
-          failed_ratio: 0.02
 
 execution:
 - scenario: sample
