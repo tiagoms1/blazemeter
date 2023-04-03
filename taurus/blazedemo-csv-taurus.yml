@@ -5,9 +5,7 @@ modules:
     test: BlazeDemoCSVTaurus
     timeout: 7s # BlazeMeter API client timeout
     browser-open: start # auto-open browser on test start/end/both/none
-    account: 1348473
-    workspace: 1390065
-    project: 1785440
+    #account, workspace and project defined on .bzt-rc file
 
 scenarios:
   sample:
@@ -18,6 +16,11 @@ scenarios:
 #reporting:
 #- module: final-stats
 #- module: console
+reporting:
+  - module: passfail
+    criteria:
+      - critical:
+          failed_ratio: 0.02
 
 execution:
 - scenario: sample
