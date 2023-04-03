@@ -30,9 +30,9 @@
 modules:
   blazemeter:
     token: 3c61b680b4cbb84cac5efdce:7db6c98b81d345b23bdf5648fe34c5e8a30c8d29cdfa6fdee476e82de7b344305d0747f8
-    account: 1348473
-    workspace: 1390065
-    project: 1785440
+    account: 291446
+    workspace: 435725
+    project: 530057
 
 #    token: <key id>:<key secret>  # API id and API secret joined with ':'
 #
