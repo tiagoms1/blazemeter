@@ -5,7 +5,7 @@ modules:
     test: BlazeDemoCSVTaurus
     timeout: 7s # BlazeMeter API client timeout
     browser-open: start # auto-open browser on test start/end/both/none
-    #account, workspace and project defined on .bzt-rc file
+    #account, workspace and project defined on .bzt-rc file to confirm
 
 scenarios:
   sample:
@@ -26,6 +26,6 @@ execution:
   concurrency: 15
   hold-for: 1m
   ramp-up: 30s
-  #locations:
+  #locations: #uncomment if you want to configure locations
   #    us-west-1: 1
   
