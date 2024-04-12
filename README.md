@@ -1,6 +1,6 @@
 # BlazeMeter things
 
-BlazeMeter lab stuff to play and share with everybody.
+BlazeMeter lab stuff to play and share with everybody..
 
 ## DigitalBank-docker-app
 
