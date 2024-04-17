@@ -1,0 +1,59 @@
+pipeline{
+    agent any
+
+    stages{
+      stage ('Pull Code'){
+          steps{
+            echo "pulling code"
+          }
+      }
+      stage ('Build Digital Bank'){
+          steps{
+            echo "Build Digital Bank code"
+            sh 'sleep 5'
+            echo "###Maven Build done###"
+          }
+      }
+      stage ('Run Smoke Tests'){
+          steps{
+            echo "run Smoke Tests"
+            //sh 'sleep 25'
+            //sh 'bzt mytaurus.yaml'
+            echo "###Smoke Test done###"
+          }
+      }
+      stage ('BlazeMeter Functional test'){
+          steps{
+            echo "run Functional Tests"
+            //blazeMeterTest credentialsId: 'Blaze-Jenkins-key', getJtl: false, getJunit: true, testId: '7800426.taurus', workspaceId: '348615'
+            //blazeMeterTest credentialsId: 'Blaze-Jenkins-key', getJtl: false, getJunit: true, testId: '8809338.taurus', workspaceId: '348615'
+            echo "###Functional Test done###"
+          }
+      }
+      stage('Run Performance Tests') {
+          steps{
+            script{
+                echo "run Performance Tests"
+                //blazeMeterTest credentialsId: 'Blaze-Jenkins-key', getJtl: false, getJunit: false, testId: '10672687.taurus', workspaceId: '435725'
+                blazeMeterTest credentialsId: 'Blaze-Jenkins-key', getJtl: false, getJunit: false, testId: '10672687.taurus', workspaceId: '435725'
+                echo "###Performance Test done###"
+            }
+          }
+          post{
+              success{
+                  echo "preparing to deploy"
+              }
+              failure{
+                  error "Performance Test Failed"
+              }
+          }
+      }
+     stage ('Deploy DigitalBank'){
+         steps{
+            echo "run Deploy"
+            sh 'sleep 15'
+            echo "###Deploy done###"
+         }
+      }
+    }
+}
