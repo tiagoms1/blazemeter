@@ -1,0 +1,30 @@
+name: BlazeMeter Action Functional Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  func-test:
+
+    runs-on: ubuntu-latest
+
+    steps:              
+    - name: BlazeRunnerAction
+      uses: Blazemeter/github-action@v8.5
+      with:
+        apiKey: 3c61b680b4cbb84cac5efdce
+        apiSecret: 7db6c98b81d345b23bdf5648fe34c5e8a30c8d29cdfa6fdee476e82de7b344305d0747f8
+        createTest: true
+        testName: "BlazeMeter GitHub"
+        inputStartFile: "test.yml"
+        inputAllFiles: true
+        projectID: 530057
+        
+
+            
