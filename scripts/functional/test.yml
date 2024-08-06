@@ -1,0 +1,204 @@
+modules:
+    nose:
+        ignore-unknown-actions: true
+execution:
+    -
+        scenario: digital-bank-Selenium
+        executor: selenium
+        iterations: 0
+scenarios:
+    digital-bank-Selenium:
+        generate-flow-markers: true
+        headless: false
+        timeout: 60s
+        think-time: 0s
+        requests:
+            -
+                label: Test
+                actions:
+                    -
+                        type: resizeWindow
+                        param: '1385,685'
+                    -
+                        type: go
+                        param: 'http://dbankdemo.com/bank/login'
+            -
+                label: 'user e pwd'
+                actions:
+                    -
+                        type: click
+                        locators:
+                            -
+                                XPath: '//input[@placeholder = "Enter User Name"]'
+                            -
+                                ID: username
+                            -
+                                Name: username
+                            -
+                                CSS: '#username'
+                            -
+                                XPath: '//input[@id=''username'']'
+                            -
+                                XPath: //input
+                    -
+                        type: type
+                        param: '${dbankUser}'
+                        locators:
+                            -
+                                XPath: '//input[@placeholder = "Enter User Name"]'
+                            -
+                                ID: username
+                            -
+                                Name: username
+                            -
+                                CSS: '#username'
+                            -
+                                XPath: '//input[@id=''username'']'
+                            -
+                                XPath: //input
+                    -
+                        type: click
+                        locators:
+                            -
+                                XPath: '//input[@placeholder = "Enter Password"]'
+                            -
+                                ID: password
+                            -
+                                Name: password
+                            -
+                                CSS: '#password'
+                            -
+                                XPath: '//input[@id=''password'']'
+                            -
+                                XPath: '//div[2]/input'
+                    -
+                        type: type
+                        param: '${dbankPwd}'
+                        locators:
+                            -
+                                XPath: '//input[@placeholder = "Enter Password"]'
+                            -
+                                ID: password
+                            -
+                                Name: password
+                            -
+                                CSS: '#password'
+                            -
+                                XPath: '//input[@id=''password'']'
+                            -
+                                XPath: '//div[2]/input'
+            -
+                label: 'sign in'
+                actions:
+                    -
+                        type: click
+                        locators:
+                            -
+                                ID: submit
+                            -
+                                XPath: '//button[@id=''submit'']'
+                            -
+                                XPath: '//*[text() = "SIGN IN"]'
+                            -
+                                CSS: '#submit'
+                            -
+                                XPath: //button
+                    -
+                        type: assertText
+                        param: Dashboard
+                        locators:
+                            -
+                                XPath: '//*[text() = "Dashboard"]'
+                            -
+                                ID: page-title
+                            -
+                                CSS: '#page-title'
+                            -
+                                XPath: '//h1[@id=''page-title'']'
+                            -
+                                XPath: '//div[@id=''right-panel'']/div/div/div/div/h1'
+                            -
+                                XPath: //h1
+            -
+                label: logout
+                actions:
+                    -
+                        type: click
+                        locators:
+                            -
+                                CSS: img.user-avatar.rounded-circle
+                            -
+                                XPath: '//img[@alt=''User Avatar'']'
+                            -
+                                XPath: '//header[@id=''header'']/div/div[2]/div/a/img'
+                            -
+                                XPath: '//div[2]/div/a/img'
+                    -
+                        type: click
+                        locators:
+                            -
+                                LinkText: Logout
+                            -
+                                XPath: '//a[contains(text(),''Logout'')]'
+                            -
+                                XPath: '//header[@id=''header'']/div/div[2]/div/div/a[5]'
+                            -
+                                XPath: '//*[text() = "Logout"]'
+                            -
+                                XPath: '//a[contains(@href, ''/bank/logout'')]'
+                            -
+                                XPath: '//a[5]'
+                    -
+                        type: assertText
+                        param: Success
+                        locators:
+                            -
+                                XPath: '//*[text() = "Success"]'
+                            -
+                                CSS: span.badge.badge-pill.badge-success
+                            -
+                                XPath: //span
+                    -
+                        type: contextClick
+                        locators:
+                            -
+                                XPath: '//*[text() = "Success"]'
+                            -
+                                CSS: span.badge.badge-pill.badge-success
+                            -
+                                XPath: //span
+dependencies:
+    data:
+        schema: 'http://blazemeter.com/blazedata/schema'
+        id: datamodels/testParameters
+        title: 'Test Parameters'
+        description: ''
+        kind: tdm
+        type: object
+        entities:
+            digitalbank:
+                title: digitalbank
+                type: object
+                properties:
+                    dbankUser:
+                        type: string
+                    dbankPwd:
+                        type: string
+                    dbankTest:
+                        type: string
+                requirements:
+                    dbankUser: 'valueOfCSV("dbankLogins.csv", "dbankUser")'
+                    dbankPwd: 'valueOfCSV("dbankLogins.csv", "dbankPwd")'
+                    dbankTest: 'valueOfCSV("dbankLogins.csv", "dbankTest")'
+                targets:
+                    defaultCsv:
+                        type: csv
+                        file: digitalbank.csv
+                        isHeadless: false
+                datasources:
+                    -
+                        id:
+                            fileName: dbankLogins.csv
+                        type: csv
+                        name: dbankLogins.csv
+                        loop: false
