@@ -1,5 +1,5 @@
 dbankUser,dbankPwd,dbankTest
-nsmith@demo.io,Demo123!,Test Login OK
-wrong-user,wrong-pwd,Test Login NOK user and pwd
-nsmith@demo.io,wrong-pwd,Test Login NOK pwd
-wrong-user,Demo123!,Test Login NOK user
+nsmith@demo.io,Demo123!,Test Login OK.
+wrong-user,wrong-pwd,Test Login NOK user and pwd.
+nsmith@demo.io,wrong-pwd,Test Login NOK pwd.
+wrong-user,Demo123!,Test Login NOK user.
