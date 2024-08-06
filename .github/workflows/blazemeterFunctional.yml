@@ -22,8 +22,9 @@ jobs:
         apiSecret: da38d625015e8dae7d2d0c896cd5949b78dfc1178be350e699f5145799b0fa0467008e1f
         createTest: true
         testName: "BlazeMeter GitHub"
-        inputStartFile: "test.yml"
-        inputAllFiles: true
+        inputStartFile: "scripts/functional/test.yml"
+        inputAllFiles: "scripts/functional"
+        uploadFileCheck: true
         projectID: 530057
         
 
