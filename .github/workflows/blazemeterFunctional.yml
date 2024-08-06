@@ -16,13 +16,13 @@ jobs:
 
     steps:
     
-    - name: Kick off BlazeMeter Test as is
-      uses: Blazemeter/github-action@v8.5
-      with:
-        apiKey: 346094146ef68e58fa333a84
-        apiSecret: da38d625015e8dae7d2d0c896cd5949b78dfc1178be350e699f5145799b0fa0467008e1f
-        testID: 14302101
-        functionalTest: true
+#    - name: Kick off BlazeMeter Test as is
+#      uses: Blazemeter/github-action@v8.5
+#      with:
+#        apiKey: 346094146ef68e58fa333a84
+#        apiSecret: da38d625015e8dae7d2d0c896cd5949b78dfc1178be350e699f5145799b0fa0467008e1f
+#        testID: 14302101
+#        functionalTest: true
         
     - name: BlazeMeter Test Data 1
       uses: Blazemeter/github-action@v8.5
@@ -31,16 +31,16 @@ jobs:
         apiSecret: da38d625015e8dae7d2d0c896cd5949b78dfc1178be350e699f5145799b0fa0467008e1f
         testID: 14302101
         functionalTest: true
-        modelData: '{"dbankUser": "nsmith@demo.io", "dbankPwd":"Demo123!"}'
+        modelData: '{"dbankUser":"nsmith@demo.io", "dbankPwd":"Demo123!"}'
 
-    - name: BlazeMeter Test Data 2
-      uses: Blazemeter/github-action@v8.5
-      with:
-        apiKey: 346094146ef68e58fa333a84
-        apiSecret: da38d625015e8dae7d2d0c896cd5949b78dfc1178be350e699f5145799b0fa0467008e1f
-        testID: 14302101
-        functionalTest: true
-        inputStartFile: "scripts/functional/test.yml"
-        inputAllFiles: "scripts/functional"
-        uploadFileCheck: true
-        projectID: 530057
+#    - name: BlazeMeter Test Data 2
+#      uses: Blazemeter/github-action@v8.5
+#      with:
+#        apiKey: 346094146ef68e58fa333a84
+#        apiSecret: da38d625015e8dae7d2d0c896cd5949b78dfc1178be350e699f5145799b0fa0467008e1f
+#        testID: 14302101
+#        functionalTest: true
+#        inputStartFile: "scripts/functional/test.yml"
+#        inputAllFiles: "scripts/functional"
+#        uploadFileCheck: true
+#        projectID: 530057
