@@ -18,8 +18,8 @@ jobs:
     - name: BlazeRunnerAction
       uses: Blazemeter/github-action@v8.5
       with:
-        apiKey: 3c61b680b4cbb84cac5efdce
-        apiSecret: 7db6c98b81d345b23bdf5648fe34c5e8a30c8d29cdfa6fdee476e82de7b344305d0747f8
+        apiKey: 346094146ef68e58fa333a84
+        apiSecret: da38d625015e8dae7d2d0c896cd5949b78dfc1178be350e699f5145799b0fa0467008e1f
         createTest: true
         testName: "BlazeMeter GitHub"
         inputStartFile: "test.yml"
