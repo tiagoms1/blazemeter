@@ -1,0 +1,75 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Demo Perfecto API",
+    "collectionId": "823ee1e6-f81b-4116-a064-3c9a8bedd8d7",
+    "dateExported": "2024-10-18T18:30:53.012Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "29f40735-1ee1-4fc5-8dc2-95259e4ec4fe",
+            "colId": "823ee1e6-f81b-4116-a064-3c9a8bedd8d7",
+            "containerId": "",
+            "name": "Get ANDROID Artifacts list",
+            "url": "https://demo.app.perfectomobile.com/repository/api/v1/artifacts?artifactType=ANDROID",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-02-28T18:03:15.798Z",
+            "modified": "2023-02-28T18:03:15.798Z",
+            "headers": [
+                {
+                    "name": "Perfecto-Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4YmI4YmZmZS1kMzBjLTQ2MjctYmMxMS0zNTYyMmY1ZDkyMGYifQ.eyJpYXQiOjE2NDkxMDk1OTksImp0aSI6IjBhMDk4NmZkLTU2MTEtNDg3Yi04M2Q2LTNmNzA3Yzg5MzE2OSIsImlzcyI6Imh0dHBzOi8vYXV0aC5wZXJmZWN0b21vYmlsZS5jb20vYXV0aC9yZWFsbXMvZGVtby1wZXJmZWN0b21vYmlsZS1jb20iLCJhdWQiOiJodHRwczovL2F1dGgucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL2RlbW8tcGVyZmVjdG9tb2JpbGUtY29tIiwic3ViIjoiN2YwNTllY2YtYmIzZi00ZTdlLTkxNDktMGNiZDcwMmY5NjAzIiwidHlwIjoiT2ZmbGluZSIsImF6cCI6Im9mZmxpbmUtdG9rZW4tZ2VuZXJhdG9yIiwibm9uY2UiOiI1Yzg3MTEzOS00NmRmLTQwZjktOWY2MC0xNGY5NDQ0N2Q0NTQiLCJzZXNzaW9uX3N0YXRlIjoiYzQ0M2JmMjItMDE2Yy00ZWFmLWJjNGQtZTcwZGE1MGViYTliIiwic2NvcGUiOiJvcGVuaWQgb2ZmbGluZV9hY2Nlc3MifQ.ubxCF-vdv2OhzGS-pXZQtTM-UD1AGxeqc6YnlqeFSxM"
+                }
+            ],
+            "params": [
+                {
+                    "name": "artifactType",
+                    "value": "ANDROID",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9dffeb72-0627-4731-870a-253907c7bb5e",
+            "colId": "823ee1e6-f81b-4116-a064-3c9a8bedd8d7",
+            "containerId": "",
+            "name": "UploadRepositoryFile",
+            "url": "https://demo.app.perfectomobile.com/repository/api/v1/artifacts",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-02-28T19:38:29.012Z",
+            "modified": "2023-02-28T19:40:54.006Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data"
+                },
+                {
+                    "name": "Perfecto-Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4YmI4YmZmZS1kMzBjLTQ2MjctYmMxMS0zNTYyMmY1ZDkyMGYifQ.eyJpYXQiOjE2NDkxMDk1OTksImp0aSI6IjBhMDk4NmZkLTU2MTEtNDg3Yi04M2Q2LTNmNzA3Yzg5MzE2OSIsImlzcyI6Imh0dHBzOi8vYXV0aC5wZXJmZWN0b21vYmlsZS5jb20vYXV0aC9yZWFsbXMvZGVtby1wZXJmZWN0b21vYmlsZS1jb20iLCJhdWQiOiJodHRwczovL2F1dGgucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL2RlbW8tcGVyZmVjdG9tb2JpbGUtY29tIiwic3ViIjoiN2YwNTllY2YtYmIzZi00ZTdlLTkxNDktMGNiZDcwMmY5NjAzIiwidHlwIjoiT2ZmbGluZSIsImF6cCI6Im9mZmxpbmUtdG9rZW4tZ2VuZXJhdG9yIiwibm9uY2UiOiI1Yzg3MTEzOS00NmRmLTQwZjktOWY2MC0xNGY5NDQ0N2Q0NTQiLCJzZXNzaW9uX3N0YXRlIjoiYzQ0M2JmMjItMDE2Yy00ZWFmLWJjNGQtZTcwZGE1MGViYTliIiwic2NvcGUiOiJvcGVuaWQgb2ZmbGluZV9hY2Nlc3MifQ.ubxCF-vdv2OhzGS-pXZQtTM-UD1AGxeqc6YnlqeFSxM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "requestPart",
+                        "value": "{\"artifactLocator\":\"PRIVATE:vitals.pdf\",\"artifactType\":\"GENERAL\",\"override\":true}"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "inputStream",
+                        "value": "c:\\Users\\tsoares.DAS\\Downloads\\perfecto-vitals.pdf"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "ref": "iU_mM0IXklYsb-u1i3fWH2Xud0CZW5jpUydG0u7Nz8RLMJ1mCWS-SdJqga20JMJs3amLzt7rj04y6CFIxnXrcg"
+}

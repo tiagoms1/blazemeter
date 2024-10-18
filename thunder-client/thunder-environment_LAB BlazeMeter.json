@@ -1,0 +1,34 @@
+{
+    "clientName": "Thunder Client",
+    "environmentName": "LAB BlazeMeter",
+    "environmentId": "7849ba6c-b115-4476-8eac-2e32159c8d0c",
+    "dateExported": "2024-10-18T18:31:18.712Z",
+    "version": "1.2",
+    "variables": [
+        {
+            "name": "APIKey",
+            "value": "ab86e5ff15640d6df820506b"
+        },
+        {
+            "name": "APISecret",
+            "value": "10b17b1ad4fd1cbee7fcd5e9492c6d5767f8f2af07ffbcd185635ab43e3f4bba1e84b36d"
+        },
+        {
+            "name": "WorkspaceID",
+            "value": "18"
+        },
+        {
+            "name": "ProjectID",
+            "value": "1328132"
+        },
+        {
+            "name": "TestID",
+            "value": "10524110"
+        },
+        {
+            "name": "MasterID",
+            "value": ""
+        }
+    ],
+    "ref": "rIrZQAhE8r0c695zUeaR9cvRtxc0WMwKaSqInzJ5XhjSW7K5wS5Q3TTMvyNR4txi"
+}

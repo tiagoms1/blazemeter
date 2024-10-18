@@ -1,0 +1,288 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "BlazeMeter LAB API for Tests",
+    "collectionId": "f79205d3-4bea-41e4-93d4-3925c614db66",
+    "dateExported": "2024-10-18T18:30:45.977Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1bc5d751-c2f4-4d6f-992e-7a230e3625c0",
+            "colId": "f79205d3-4bea-41e4-93d4-3925c614db66",
+            "containerId": "",
+            "name": "List Tests",
+            "url": "https://a.blazemeter.com/api/v4/tests?projectId={{ProjectID}}&workspaceId={{WorkspaceID}}",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-01-26T13:01:26.360Z",
+            "modified": "2022-02-09T18:08:44.293Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "projectId",
+                    "value": "{{ProjectID}}",
+                    "isPath": false
+                },
+                {
+                    "name": "workspaceId",
+                    "value": "{{WorkspaceID}}",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{APIKey}}",
+                    "password": "{{APISecret}}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "587b4d67-975a-4cd2-b2d3-3a420fe7e3ca",
+            "colId": "f79205d3-4bea-41e4-93d4-3925c614db66",
+            "containerId": "",
+            "name": "Details of Tiago Troubleshoot Test",
+            "url": "https://a.blazemeter.com/api/v4/tests/10585967",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-01-26T13:01:26.360Z",
+            "modified": "2022-02-09T18:10:47.241Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{APIKey}}",
+                    "password": "{{APISecret}}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "1c9e14d9-bb25-4bcc-8725-72df447d351a",
+            "colId": "f79205d3-4bea-41e4-93d4-3925c614db66",
+            "containerId": "",
+            "name": "Start Test",
+            "url": "https://a.blazemeter.com/api/v4/tests/9995450/start?delayedStart=false",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2022-01-26T13:01:26.360Z",
+            "modified": "2022-01-26T13:01:26.360Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "delayedStart",
+                    "value": "false",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "5e4a3e40f63effdcba016056",
+                    "password": "b56b97db425bfec6f9363e321e6e6b9ad0b6c2df0bf9cc76db884356717bb478cbe958b8"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "3c68dcc9-03bb-4d2a-bd0b-968ceacdf63d",
+            "colId": "f79205d3-4bea-41e4-93d4-3925c614db66",
+            "containerId": "",
+            "name": "Track Test",
+            "url": "https://a.blazemeter.com/api/v4/masters/60177495/status?level=NOTICE",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2022-01-26T13:01:26.360Z",
+            "modified": "2022-01-26T13:01:26.360Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "level",
+                    "value": "NOTICE",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "5e4a3e40f63effdcba016056",
+                    "password": "b56b97db425bfec6f9363e321e6e6b9ad0b6c2df0bf9cc76db884356717bb478cbe958b8"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "6da9bd0d-7d49-40ee-8e3e-6d24d73fcd6d",
+            "colId": "f79205d3-4bea-41e4-93d4-3925c614db66",
+            "containerId": "",
+            "name": "Get Test Results",
+            "url": "https://a.blazemeter.com/api/v4/masters/60177495",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2022-01-26T13:01:26.360Z",
+            "modified": "2022-01-26T13:01:26.360Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "5e4a3e40f63effdcba016056",
+                    "password": "b56b97db425bfec6f9363e321e6e6b9ad0b6c2df0bf9cc76db884356717bb478cbe958b8"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "1698f5e7-7ba9-4e5c-acc7-0c517102941b",
+            "colId": "f79205d3-4bea-41e4-93d4-3925c614db66",
+            "containerId": "",
+            "name": "User",
+            "url": "https://a.blazemeter.com/api/v4/user",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2022-01-26T13:01:26.360Z",
+            "modified": "2022-01-26T13:01:26.360Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "ecdb0722007a843587a01ea2",
+                    "password": "01fe2b1432f6130ab271b8351ddeb9b145b5a624c8084146dfe391196cf5e6c5bbcd9a3c"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "bb594077-5fdd-451b-82b3-2e70f56faa46",
+            "colId": "f79205d3-4bea-41e4-93d4-3925c614db66",
+            "containerId": "",
+            "name": "Create URL Test",
+            "url": "https://a.blazemeter.com/api/v4/tests/14116868/files/create",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-05-08T14:38:05.568Z",
+            "modified": "2024-05-08T14:38:05.568Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"testId\":14116868,\"fileName\":\"blazemeter_url_test_script.yaml\",\"content\":\"execution:\\n  - scenario: default-scenario\\n    hold-for: 14m\\n    ramp-up: 1m\\n    concurrency: 400\\n    locations:\\n      us-east4-a: 100\\n      us-east1-b: 100\\n      us-west1-a: 100\\n      us-central1-a: 100\\n    steps: 4\\nscenarios:\\n  default-scenario:\\n    requests:\\n      - url: https://webnysftest1.ny.gov/\\n        method: GET\\n        label: NY State Landing Page\\n        headers:\\n          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\\n          Accept-Language: en-US,en;q=0.9,en-GB;q=0.8,pt;q=0.7,es;q=0.6,es-ES;q=0.5\\n          Connection: keep-alive\\n          Sec-Fetch-Dest: document\\n          Sec-Fetch-Mode: navigate\\n          Sec-Fetch-Site: none\\n          Sec-Fetch-User: '?1'\\n          Upgrade-Insecure-Requests: '1'\\n          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\\n          sec-ch-ua: '\\\"Chromium\\\";v=\\\"124\\\", \\\"Microsoft Edge\\\";v=\\\"124\\\", \\\"Not-A.Brand\\\";v=\\\"99\\\"'\\n          sec-ch-ua-mobile: '?0'\\n          sec-ch-ua-platform: '\\\"Windows\\\"'\\n      - url: https://cdn-staging.amber.ny.gov/AmberAlertPublicNotification/notify/getActiveAlerts\\n        method: GET\\n        label: GetAlerts\\n        headers:\\n          accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\\n          accept-language: en-US,en;q=0.9,en-GB;q=0.8,pt;q=0.7,es;q=0.6,es-ES;q=0.5\\n          origin: https://webnysftest1.ny.gov\\n          priority: u=0, i\\n          referer: https://webnysftest1.ny.gov/\\n          sec-ch-ua: '\\\"Chromium\\\";v=\\\"124\\\", \\\"Microsoft Edge\\\";v=\\\"124\\\", \\\"Not-A.Brand\\\";v=\\\"99\\\"'\\n          sec-ch-ua-mobile: '?0'\\n          sec-ch-ua-platform: '\\\"Windows\\\"'\\n          sec-fetch-dest: document\\n          sec-fetch-mode: navigate\\n          sec-fetch-site: same-site\\n          user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\\n          accept-encoding: gzip, deflate, br, zstd\\n      - url: https://cdn-staging.amber.ny.gov/AmberAlertPublicNotification/notify/getImage?imageId=3211530008&domain=WPR&domainId=9111619&imageType=P\\n        method: GET\\n        label: Missing Children\\n        headers:\\n          accept: text/plain, */*; q=0.01\\n          accept-language: en-US,en;q=0.9,en-GB;q=0.8,pt;q=0.7,es;q=0.6,es-ES;q=0.5\\n          origin: https://webnysftest1.ny.gov\\n          priority: u=0, i\\n          referer: https://webnysftest1.ny.gov/\\n          sec-ch-ua: '\\\"Chromium\\\";v=\\\"124\\\", \\\"Microsoft Edge\\\";v=\\\"124\\\", \\\"Not-A.Brand\\\";v=\\\"99\\\"'\\n          sec-ch-ua-mobile: '?0'\\n          sec-ch-ua-platform: '\\\"Windows\\\"'\\n          sec-fetch-dest: empty\\n          sec-fetch-mode: cors\\n          sec-fetch-site: same-site\\n          user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\\n          accept-encoding: gzip, deflate, br, zstd\\n      - url: https://cdn-staging.amber.ny.gov/AmberAlertPublicNotification/notify/getImage?imageId=3211484737&domain=WPR&domainId=9111619&imageType=S1\\n        method: GET\\n        label: Unusual Suspects\\n        headers:\\n          accept: text/plain, */*; q=0.01\\n          accept-language: en-US,en;q=0.9,en-GB;q=0.8,pt;q=0.7,es;q=0.6,es-ES;q=0.5\\n          origin: https://webnysftest1.ny.gov\\n          priority: u=0, i\\n          referer: https://webnysftest1.ny.gov/\\n          sec-ch-ua: '\\\"Chromium\\\";v=\\\"124\\\", \\\"Microsoft Edge\\\";v=\\\"124\\\", \\\"Not-A.Brand\\\";v=\\\"99\\\"'\\n          sec-ch-ua-mobile: '?0'\\n          sec-ch-ua-platform: '\\\"Windows\\\"'\\n          sec-fetch-dest: empty\\n          sec-fetch-mode: cors\\n          sec-fetch-site: same-site\\n          user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\\n          accept-encoding: gzip, deflate, br, zstd\\n      - url: https://cdn-staging.amber.ny.gov/AmberAlertPublicNotification/notify/getImage?imageId=3211484738&domain=WPR&domainId=9111619&imageType=S2\\n        method: GET\\n        label: Usual Suspects\\n        headers:\\n          accept: text/plain, */*; q=0.01\\n          accept-language: en-US,en;q=0.9,en-GB;q=0.8,pt;q=0.7,es;q=0.6,es-ES;q=0.5\\n          origin: https://webnysftest1.ny.gov\\n          priority: u=0, i\\n          referer: https://webnysftest1.ny.gov/\\n          sec-ch-ua: '\\\"Chromium\\\";v=\\\"124\\\", \\\"Microsoft Edge\\\";v=\\\"124\\\", \\\"Not-A.Brand\\\";v=\\\"99\\\"'\\n          sec-ch-ua-mobile: '?0'\\n          sec-ch-ua-platform: '\\\"Windows\\\"'\\n          sec-fetch-dest: empty\\n          sec-fetch-mode: cors\\n          sec-fetch-site: same-site\\n          user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\\n          accept-encoding: gzip, deflate, br, zstd\\n      - url: https://cdn-staging.amber.ny.gov/AmberAlertPublicNotification/notify/getImage?imageId=3211484736&domain=WPR&domainId=9111619&imageType=V\\n        method: GET\\n        label: Vehicle\\n        headers:\\n          accept: text/plain, */*; q=0.01\\n          accept-language: en-US,en;q=0.9,en-GB;q=0.8,pt;q=0.7,es;q=0.6,es-ES;q=0.5\\n          origin: https://webnysftest1.ny.gov\\n          priority: u=0, i\\n          referer: https://webnysftest1.ny.gov/\\n          sec-ch-ua: '\\\"Chromium\\\";v=\\\"124\\\", \\\"Microsoft Edge\\\";v=\\\"124\\\", \\\"Not-A.Brand\\\";v=\\\"99\\\"'\\n          sec-ch-ua-mobile: '?0'\\n          sec-ch-ua-platform: '\\\"Windows\\\"'\\n          sec-fetch-dest: empty\\n          sec-fetch-mode: cors\\n          sec-fetch-site: same-site\\n          user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\\n          accept-encoding: gzip, deflate, br, zstd\\n      - url: https://webnycdn.ny.gov/sites/g/files/oee671/files/css/css_gKmuvfZdQMO7OU1tm-D5X7owm6F4xGoL7tXMFaKXVP0.css?delta=0&amp;language=en&amp;theme=webny_theme&amp;include=eJxtkVFywyAMRC9kh9_ehhGg2KoVRBGOh56-xLHb0PaHWe2ThkVs6GK1E4sDthHu5inHJodtZ4peYoBcd_xdvXSsD7DL8SEHv2CgItlSDBiLY_GLedHDJDIxWojAtZBX89sYtGrBm3GgeFxSZrzhmU5LZYpTh1KmWHaC2oE7BZTxXUfCt_-B136ibGLdWopEG1B9ptRe03V4yKEfAcd91K0qbbXP-LGSX1ryRYcEGaYMaVYT8pqALz_OZY1pdUw6Yxgcw2c1-3loFjjtJFyvxHyUnkG1zZUTZ7lRW-GzynA9VMuUumDtW6CQxM7UGTJaB_nv1mbM8gU3CuBl\\n        method: GET\\n        label: webnycdn-req1\\n      - url: https://webnycdn.ny.gov/sites/g/files/oee671/files/css/css_SZT0lag8TVRBV9rnCkrNqzIDhXyEEzJLpiQK5JuCGis.css?delta=1&amp;language=en&amp;theme=webny_theme&amp;include=eJxtkVFywyAMRC9kh9_ehhGg2KoVRBGOh56-xLHb0PaHWe2ThkVs6GK1E4sDthHu5inHJodtZ4peYoBcd_xdvXSsD7DL8SEHv2CgItlSDBiLY_GLedHDJDIxWojAtZBX89sYtGrBm3GgeFxSZrzhmU5LZYpTh1KmWHaC2oE7BZTxXUfCt_-B136ibGLdWopEG1B9ptRe03V4yKEfAcd91K0qbbXP-LGSX1ryRYcEGaYMaVYT8pqALz_OZY1pdUw6Yxgcw2c1-3loFjjtJFyvxHyUnkG1zZUTZ7lRW-GzynA9VMuUumDtW6CQxM7UGTJaB_nv1mbM8gU3CuBl\\n        method: GET\\n        label: webnycdn-req2\\n      - url: https://webnycdn.ny.gov/sites/g/files/oee671/files/css/css_ObaEAgurOlS1BGdFYU0dAX0LBlOLfxPdFC0lAPaFz9Q.css?delta=3&amp;language=en&amp;theme=webny_theme&amp;include=eJxtkVFywyAMRC9kh9_ehhGg2KoVRBGOh56-xLHb0PaHWe2ThkVs6GK1E4sDthHu5inHJodtZ4peYoBcd_xdvXSsD7DL8SEHv2CgItlSDBiLY_GLedHDJDIxWojAtZBX89sYtGrBm3GgeFxSZrzhmU5LZYpTh1KmWHaC2oE7BZTxXUfCt_-B136ibGLdWopEG1B9ptRe03V4yKEfAcd91K0qbbXP-LGSX1ryRYcEGaYMaVYT8pqALz_OZY1pdUw6Yxgcw2c1-3loFjjtJFyvxHyUnkG1zZUTZ7lRW-GzynA9VMuUumDtW6CQxM7UGTJaB_nv1mbM8gU3CuBl\\n        method: GET\\n        label: webnycdn-req3\\n      - url: https://webnycdn.ny.gov/sites/g/files/oee671/files/js/js_d3sIfAEpL3Px9O_YC7pJIB1JwOo8yPpL_CXB_GdapwU.js?scope=header&amp;delta=0&amp;language=en&amp;theme=webny_theme&amp;include=eJxtkVFywyAMRC9kh9_ehhGg2KoVRBGOh56-xLHb0PaHWe2ThkVs6GK1E4sDthHu5inHJodtZ4peYoBcd_xdvXSsD7DL8SEHv2CgItlSDBiLY_GLedHDJDIxWojAtZBX89sYtGrBm3GgeFxSZrzhmU5LZYpTh1KmWHaC2oE7BZTxXUfCt_-B136ibGLdWopEG1B9ptRe03V4yKEfAcd91K0qbbXP-LGSX1ryRYcEGaYMaVYT8pqALz_OZY1pdUw6Yxgcw2c1-3loFjjtJFyvxHyUnkG1zZUTZ7lRW-GzynA9VMuUumDtW6CQxM7UGTJaB_nv1mbM8gU3CuBl\\n        method: GET\\n        label: webnycdn-req4\\n      - url: https://webnycdn.ny.gov/sites/g/files/oee671/files/js/js_Apy5n0fsPgATHDFpUh7rlrbAeNyEokxQ44KR_p3BOeg.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=webny_theme&amp;include=eJxtkVFywyAMRC9kh9_ehhGg2KoVRBGOh56-xLHb0PaHWe2ThkVs6GK1E4sDthHu5inHJodtZ4peYoBcd_xdvXSsD7DL8SEHv2CgItlSDBiLY_GLedHDJDIxWojAtZBX89sYtGrBm3GgeFxSZrzhmU5LZYpTh1KmWHaC2oE7BZTxXUfCt_-B136ibGLdWopEG1B9ptRe03V4yKEfAcd91K0qbbXP-LGSX1ryRYcEGaYMaVYT8pqALz_OZY1pdUw6Yxgcw2c1-3loFjjtJFyvxHyUnkG1zZUTZ7lRW-GzynA9VMuUumDtW6CQxM7UGTJaB_nv1mbM8gU3CuBl\\n        method: GET\\n        label: webnycdn-req5\\n      - url: https://webnycdn.ny.gov/sites/g/files/oee671/files/css/css_NBDJCOjz5_8JCp3ub0eoYM4NqfGpJ7UbX2sLjEgjJuI.css?delta=2&amp;language=en&amp;theme=webny_theme&amp;include=eJxtkVFywyAMRC9kh9_ehhGg2KoVRBGOh56-xLHb0PaHWe2ThkVs6GK1E4sDthHu5inHJodtZ4peYoBcd_xdvXSsD7DL8SEHv2CgItlSDBiLY_GLedHDJDIxWojAtZBX89sYtGrBm3GgeFxSZrzhmU5LZYpTh1KmWHaC2oE7BZTxXUfCt_-B136ibGLdWopEG1B9ptRe03V4yKEfAcd91K0qbbXP-LGSX1ryRYcEGaYMaVYT8pqALz_OZY1pdUw6Yxgcw2c1-3loFjjtJFyvxHyUnkG1zZUTZ7lRW-GzynA9VMuUumDtW6CQxM7UGTJaB_nv1mbM8gU3CuBl\\n        method: GET\\n        label: webnycdn-req6\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/proximanova/proximanova-regular.woff2\\n        method: GET\\n        label: webnycdn-req7\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/fontawesome/webfonts/fa-solid-900.woff2\\n        method: GET\\n        label: webnycdn-req8\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/proximanova/proximanova-bold.woff2\\n        method: GET\\n        label: webnycdn-req9\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/icomoon/fonts/icomoon.woff?visjn7=\\n        method: GET\\n        label: webnycdn-req10\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/dsaribold/DSari_Bold-webfont.woff2\\n        method: GET\\n        label: webnycdn-req11\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/proximanova/proximanova-regular.woff2\\n        method: GET\\n        label: webnycdn-req12\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/fontawesome/webfonts/fa-solid-900.woff2\\n        method: GET\\n        label: webnycdn-req13\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/proximanova/proximanova-bold.woff2\\n        method: GET\\n        label: webnycdn-req14\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/icomoon/fonts/icomoon.woff?visjn7=\\n        method: GET\\n        label: webnycdn-req15\\n      - url: https://webnycdn.ny.gov/sites/g/files/oee671/files/styles/card_vertical/public/ambersign3.png?h=bd2752c9&amp;itok=spg4qjvS\\n        method: GET\\n        label: webnycdn-req16\\n      - url: https://webnycdn.ny.gov/sites/g/files/oee671/files/styles/card_vertical/public/yourrole.png?h=b008dd56&amp;itok=0fkPgrz-\\n        method: GET\\n        label: webnycdn-req17\\n      - url: https://webnycdn.ny.gov/sites/g/files/oee671/files/styles/card_vertical/public/TroopGCOMSEC_web.png?h=5646a0e5&amp;itok=JWlPR8y1\\n        method: GET\\n        label: webnycdn-req18\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/oswald/oswald-bold-webfont.woff\\n        method: GET\\n        label: webnycdn-req19\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/proximanova/proximanova-semibold.woff2\\n        method: GET\\n        label: webnycdn-req20\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/dsaribold/DSari_Bold-webfont.woff2\\n        method: GET\\n        label: webnycdn-req21\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/fonts/proximanova/proximanova-semibold.woff2\\n        method: GET\\n        label: webnycdn-req22\\n      - url: https://webnycdn.ny.gov/sites/g/files/oee671/files/media/2020/05/nyscountiesmap_grayoutlinessm.png\\n        method: GET\\n        label: webnycdn-req23\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/favicon.ico\\n        method: GET\\n        label: webnycdn-req24\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/icons/icon-32x32.png\\n        method: GET\\n        label: webnycdn-req25\\n      - url: https://webnycdn.ny.gov/profiles/custom/webny/themes/custom/webny_theme/images/nygov-logo.png\\n        method: GET\\n        label: webnycdn-req26\\n\",\"contentFormat\":\"yaml\"}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{APIKey}}",
+                    "password": "{{APISecret}}"
+                }
+            }
+        },
+        {
+            "_id": "9f3cb4c5-b74c-4410-8afb-0213e22e06e5",
+            "colId": "f79205d3-4bea-41e4-93d4-3925c614db66",
+            "containerId": "",
+            "name": "Inject TimeSeries Data",
+            "url": "https://a.blazemeter.com/api/v4/data/timeseries",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-06-21T17:51:23.236Z",
+            "modified": "2024-06-24T13:59:32.258Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"intervals\": [\n    {\n      \"_id\": {\n        \"masterId\": 73221300,\n        \"metricPath\": \"Lion King|Simba\",\n        \"ts\": 1518429953\n      },\n      \"kpis\": [\n        {\n          \"value\": 300,\n          \"ts\": 1518429953\n        }\n      ],\n      \"profileName\": \"Movies\"\n    },\n    {\n      \"_id\": {\n        \"masterId\": 12345678,\n        \"metricPath\": \"Lion King|Mufasa\",\n        \"ts\": 1518429953\n      },\n      \"kpis\": [\n        {\n          \"value\": 200,\n          \"ts\": 1518429953\n        }\n      ],\n      \"profileName\": \"Movies\"\n    },\n    {\n      \"_id\": {\n        \"masterId\": 12345678,\n        \"metricPath\": \"The Little Mermaid|Ariel\",\n        \"ts\": 1518429953\n      },\n      \"kpis\": [\n        {\n          \"value\": 743,\n          \"ts\": 1518429953\n        }\n      ],\n      \"profileName\": \"Movies\"\n    },\n    {\n      \"_id\": {\n        \"masterId\": 12345678,\n        \"metricPath\": \"The Little Mermaid|Ursula\",\n        \"ts\": 1518429953\n      },\n      \"kpis\": [\n        {\n          \"value\": 40,\n          \"ts\": 1518429953\n        }\n      ],\n      \"profileName\": \"Movies\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{APIKey}}",
+                    "password": "{{APISecret}}"
+                }
+            }
+        },
+        {
+            "_id": "22aa6e3d-16db-4140-a4c4-e80f0aa7117d",
+            "colId": "f79205d3-4bea-41e4-93d4-3925c614db66",
+            "containerId": "",
+            "name": "Extract TimeSeries Data",
+            "url": "https://a.blazemeter.com/api/v4/masters/73221300/reports/timeline/kpis",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-06-21T17:58:14.322Z",
+            "modified": "2024-06-21T17:59:05.401Z",
+            "headers": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{APIKey}}",
+                    "password": "{{APISecret}}"
+                }
+            }
+        },
+        {
+            "_id": "c940b2ca-9f6d-4b8d-9aca-48ead38ada0f",
+            "colId": "f79205d3-4bea-41e4-93d4-3925c614db66",
+            "containerId": "",
+            "name": "Update Value Variable Model Functional Test",
+            "url": "https://tdm.blazemeter.com/api/v1/workspaces/435725/datamodels/validate?multiEntityReport=true",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-08-08T16:36:32.346Z",
+            "modified": "2024-08-08T16:39:16.892Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "multiEntityReport",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\"data\":{\"type\":\"datamodel\",\"attributes\":{\"model\":{\"schema\":\"http://blazemeter.com/blazedata/schema\",\"id\":\"datamodels/testParameters\",\"title\":\"Test Parameters\",\"description\":\"\",\"kind\":\"tdm\",\"type\":\"object\",\"entities\":{\"DelphixEmpregados\":{\"title\":\"DelphixEmpregados\",\"type\":\"object\",\"properties\":{\"empregadoName\":{\"type\":\"string\"}},\"requirements\":{\"empregadoName\":\"'blazeok'\"},\"targets\":{\"defaultCsv\":{\"type\":\"csv\",\"file\":\"DelphixEmpregados.csv\",\"isHeadless\":false}}}}},\"context\":{\"csvs\":[{\"name\":\"functionalGui.yaml\"}]}}}}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{APIKey}}",
+                    "password": "{{AP"
+                }
+            }
+        }
+    ],
+    "ref": "J6pWNCInoGJKvkic22cppjs_wkSNlX-O-uvIJr2n5aasmAlHHF-XC79895vGlWJI1_1ASUwUoa2PjHIyoRCd-w"
+}
