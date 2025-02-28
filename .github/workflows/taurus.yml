@@ -21,4 +21,4 @@ jobs:
       with:
         taurus_project_folder_name: 'taurus'
         taurus_command_line: blazedemo-csv-taurus.yml -report
-        blazemeter_api_token: 3c61b680b4cbb84cac5efdce:7db6c98b81d345b23bdf5648fe34c5e8a30c8d29cdfa6fdee476e82de7b344305d0747f8
+        blazemeter_api_token: ${{ secrets.BLAZEMETER_API_TOKEN }}
