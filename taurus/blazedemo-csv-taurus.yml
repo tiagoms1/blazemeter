@@ -4,7 +4,7 @@ modules:
   cloud:
     test: BlazeDemoCSVTaurus
     timeout: 7s # BlazeMeter API client timeout
-    browser-open: start # auto-open browser on test start/end/both/none
+    #browser-open: start # auto-open browser on test start/end/both/none
     #account, workspace and project defined on .bzt-rc file to confirm
 
 scenarios:
@@ -17,8 +17,6 @@ reporting:
 - module: passfail
   criteria:
   - failures>2%, stop as failed
-#- module: final-stats
-#- module: console
 
 execution:
 - scenario: sample
@@ -26,6 +24,6 @@ execution:
   concurrency: 15
   hold-for: 1m
   ramp-up: 30s
-  #locations: #uncomment if you want to configure locations
-  #    us-west-1: 1
+  locations: #uncomment if you want to configure locations
+      us-west-1: 1
   
