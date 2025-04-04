@@ -27,5 +27,5 @@ execution:
   hold-for: 1m
   ramp-up: 30s
   locations: #uncomment if you want to configure locations
-      us-east-2: 1
+      us-west1-a: 1
   
