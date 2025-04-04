@@ -28,7 +28,7 @@
 
 # BlazeMeter reporting settings
 modules:
-  blazemeter:
+  cloud:
     token: ${{ secrets.BLAZEMETER_API_TOKEN }}
     account: 291446
     workspace: ".Tiago S"
