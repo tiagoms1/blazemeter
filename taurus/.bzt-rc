@@ -31,8 +31,8 @@ modules:
   blazemeter:
     token: ${{ secrets.BLAZEMETER_API_TOKEN }}
     account: 291446
-    workspace: 435725
-    project: 530057
+    workspace: ".Tiago S"
+    project: "LAB"
 
 #    token: <key id>:<key secret>  # API id and API secret joined with ':'
 #
