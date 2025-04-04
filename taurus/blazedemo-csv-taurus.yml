@@ -3,7 +3,7 @@ provisioning: cloud
 modules:
   cloud:
     test: BlazeDemoCSVTaurus
-    timeout: 7s # BlazeMeter API client timeout
+    timeout: 7s # BlazeMeter API client timeout.
     #browser-open: start # auto-open browser on test start/end/both/none
     #account, workspace and project defined on .bzt-rc file to confirm
 
