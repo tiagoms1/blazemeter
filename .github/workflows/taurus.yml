@@ -11,14 +11,17 @@ permissions:
 
 jobs:
   perf-test:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
+    
+    - name: Check network connectivity
+      run: curl -I --user '${{ secrets.BLAZEMETER_API_TOKEN }}' https://a.blazemeter.com/api/v4/accounts
+    
     - name: bzt-taurus-action
       uses: tiagoms1/taurus-action@v1
       with:
         taurus_project_folder_name: 'taurus'
         taurus_command_line: blazedemo-csv-taurus.yml -report
-        blazemeter_api_token: 346094146ef68e58fa333a84:3b54dce6708794dffeea04e5968f1134a36d91db808e1a800a70863038173c6b4747815e
+        blazemeter_api_token: ${{ secrets.BLAZEMETER_API_TOKEN }}
