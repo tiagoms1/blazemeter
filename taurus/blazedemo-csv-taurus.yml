@@ -2,11 +2,13 @@ provisioning: cloud
 
 modules:
   cloud:
+    token: ${{ secrets.BLAZEMETER_API_TOKEN }}
+    account: 291446
+    workspace: 435725
+    project: 530057
     test: BlazeDemoCSVTaurus
     timeout: 7s # BlazeMeter API client timeout.
-    #browser-open: start # auto-open browser on test start/end/both/none
-    #account, workspace and project defined on .bzt-rc file to confirm
-
+    
 scenarios:
   sample:
     script: 'blazedemo_csv.jmx'
