@@ -8,7 +8,7 @@ modules:
     project: 530057
     test: BlazeDemoCSVTaurus
     timeout: 7s # BlazeMeter API client timeout.
-    browser-open: no
+    browser-open: none
     
 scenarios:
   sample:
