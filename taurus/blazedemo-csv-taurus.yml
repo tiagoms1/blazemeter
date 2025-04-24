@@ -27,6 +27,6 @@ execution:
   concurrency: 15
   hold-for: 1m
   ramp-up: 30s
-  locations: #uncomment if you want to configure locations
+  locations: #uncomment if you want to configure locations.
       us-east-1: 1
   
