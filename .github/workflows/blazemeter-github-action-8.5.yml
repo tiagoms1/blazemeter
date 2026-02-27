@@ -34,9 +34,9 @@ jobs:
           # API Secret
           apiSecret: ${{ secrets.BLAZEMETER_API_SECRET }}
           # Test ID
-          #testID: '14752782'
+          testID: '14752782'
           # Test name for creating new test (optional)
-          testName: 'BLAZEDEMO WITH FLIGHT OPTIONS'
+          #testName: 'BLAZEDEMO WITH FLIGHT OPTIONS'
           # Project ID (optional)
           projectID: '1118561'
           # Start file for create test (optional)
